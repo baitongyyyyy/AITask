@@ -14,6 +14,6 @@ namespace AITaskDomain.Entites
         public string Description { get; set; }
         public string Status { get; set; }
         public DateTime? DueDate { get; set; }
-        public DateTime CreatedDate { get; set; } = DateTime.Now;
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
     }
 }

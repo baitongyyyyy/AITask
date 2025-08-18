@@ -14,5 +14,6 @@ namespace AITaskDomain.Entites
         public string Password { get; set; }
         public string LoginBy { get; set; }
         public DateTime CreatedAt { get; set; }
+        public ICollection<ActivityLogEntity> ActivityLogs { get; set; } = new List<ActivityLogEntity>();
     }
 }

@@ -13,5 +13,6 @@ namespace AITaskDomain.Entites
         public string Action { get; set; } // e.g., "Move Postit, Add Task"
         public DateTime Timestamp { get; set; } = DateTime.Now;
         public string Details { get; set; } // Json
+        public UserEntity User { get; set; } = null!; // Navigation property to UserEntity
     }
 }
