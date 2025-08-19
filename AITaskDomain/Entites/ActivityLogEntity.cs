@@ -10,9 +10,9 @@ namespace AITaskDomain.Entites
     {
         public int Id { get; set; }
         public int UserId { get; set; }
-        public string Action { get; set; } // e.g., "Move Postit, Add Task"
+        public required string Action { get; set; } // e.g., "Move Postit, Add Task"
         public DateTime Timestamp { get; set; } = DateTime.Now;
-        public string Details { get; set; } // Json
+        public required string Details { get; set; } // Json
         public UserEntity User { get; set; } = null!; // Navigation property to UserEntity
     }
 }

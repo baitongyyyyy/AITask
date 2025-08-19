@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AITaskDomain.Entites
+namespace AITaskApplication.DTOs
 {
-    public class PriorityEntity
+    public class Priority
     {
         public int Id { get; set; }
         public int TaskId { get; set; }
-        public required string Name { get; set; } // e.g., High, Medium, Low
+        public string Name { get; set; } = string.Empty;
         public int Feasibility { get; set; }
     }
 }

@@ -1,16 +1,18 @@
-﻿using System;
+﻿using AITaskDomain.Entites;
+using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AITaskDomain.Entites
+namespace AITaskApplication.Feature.Priority.Command
 {
-    public class PriorityEntity
+    public class PriorityCommand : IRequest<Unit>
     {
         public int Id { get; set; }
         public int TaskId { get; set; }
-        public required string Name { get; set; } // e.g., High, Medium, Low
+        public string Name { get; set; } = string.Empty;
         public int Feasibility { get; set; }
     }
 }

@@ -11,10 +11,10 @@ namespace AITaskInterfastructure.Data
 {
     public class ApplicationDbContext : DbContext
     {
-        public DbSet<ActivityLogEntity> ActivityLogs { get; set; }
-        public DbSet<PriorityEntity> Priorities { get; set; }
-        public DbSet<UserEntity> Users { get; set; }
-        public DbSet<TaskEntity> Tasks { get; set; }
+        public required DbSet<ActivityLogEntity> ActivityLogs { get; set; }
+        public required DbSet<PriorityEntity> Priorities { get; set; }
+        public required DbSet<UserEntity> Users { get; set; }
+        public required DbSet<TaskEntity> Tasks { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
